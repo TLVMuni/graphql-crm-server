@@ -23,6 +23,7 @@
     "graphql-tools": "^2.14.1",
     "jest": "^22.0.4",
     "nodemon": "^1.14.3",
+    "raf": "^3.4.0",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
   }
