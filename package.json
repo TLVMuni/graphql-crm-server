@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js --exec babel-node --presets es2015 --inspect-brk",
+    "start": "node server.js --exec babel-node --presets es2015",
     "test": "jest"
   },
   "author": "",
