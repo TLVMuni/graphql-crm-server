@@ -14,6 +14,12 @@ app.use('*', cors({ origin: '*' }));
 // });
 
 var port = process.env.PORT || 1337;
+
+app.get('/', (req, res) => {
+      res.writeHead(200, {"Content-Type": "text/plain"});
+      res.end("Hello Express3");
+})
+
 // server.listen(port);
 //
 // console.log("Server running at http://localhost:%d", port);
