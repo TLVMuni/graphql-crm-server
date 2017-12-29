@@ -25,7 +25,7 @@ app.use('/graphiql', graphiqlExpress({
     endpointURL: '/graphql'
 }));
 
-const PORT = 3001;
+const PORT = 80;
 
 app.listen(PORT, () => {
     console.log(`GraphQL Server is listening on: ${PORT}`);
