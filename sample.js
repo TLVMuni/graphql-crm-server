@@ -1,9 +1,14 @@
+require('babel-core/register');
+require('babel-polyfill');
+
 var http = require('http');
 var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 
 var graphqlHTTP = require('express-graphql');
+
+var schema = require('./schemas/schema');
 
 var app = express();
 app.use('*', cors({ origin: '*' }));
