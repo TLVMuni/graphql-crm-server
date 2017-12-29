@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js --exec babel-node --presets es2015",
+    "debug": "nodemon server.js --exec babel-node --presets es2015 --inspect-brk",
     "test": "jest"
   },
   "author": "",
@@ -26,5 +27,8 @@
     "raf": "^3.4.0",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
