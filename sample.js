@@ -18,9 +18,9 @@ app.use('*', cors({ origin: '*' }));
 
 var port = process.env.PORT || 1337;
 
-app.use('/', (req, res) => {
+app.use('/graphql', (req, res) => {
       res.writeHead(200, {"Content-Type": "text/plain"});
-      res.end("Hello Express3");
+      res.end("Hello Express4");
 })
 
 // server.listen(port);
