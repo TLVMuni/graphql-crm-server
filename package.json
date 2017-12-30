@@ -4,14 +4,13 @@
   "description": "GraphQL server set to server TLV CRM via Azure API Management",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/babel-cli/bin/babel-node.js sample.js",
-    "start:graphql": "node index.js --exec babel-node --presets es2015",
+    "start": "node server.js --exec babel-node --presets es2015",
     "debug": "nodemon server.js --exec babel-node --presets es2015 --inspect-brk",
     "test": "jest"
   },
   "author": "Oleg Kleiman",
   "engines": {
-    "node": ">=8.1"
+    "node": "8.9.0"
   },
   "license": "ISC",
   "dependencies": {
