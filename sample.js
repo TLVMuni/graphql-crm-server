@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 
 var graphqlHTTP = require('express-graphql');
-import { graphiqlExpress } from 'graphql-server';
+//import { graphiqlExpress } from 'graphql-server';
 
 var schema = require('./schemas/schema');
 
