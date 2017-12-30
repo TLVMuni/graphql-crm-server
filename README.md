@@ -2,4 +2,4 @@
 <b>This a production repository. Be careful to update the master branch of this repository because it is published as deployment source for Azure App Service https://tlvgraphql.azurewebsites.net</b>
 
 ## Notes on hosting
-On Azure this site is hosted under IIS with iisnode. By default, <i>iisnode</i> ignores scripts in <i>package.json</i> assumes the main entry point to the site to be "server.js" as specified in web.config.
+On Azure this site is hosted under IIS with iisnode. By default, <i>iisnode</i> ignores scripts in <i>package.json</i> and assumes the main entry point to the site to be "server.js" as specified in web.config. According to this defaults, <i>server.js</i> of this project serves as a hook to run JS code within babel. 
