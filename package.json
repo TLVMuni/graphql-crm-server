@@ -4,7 +4,7 @@
   "description": "GraphQL server set to server TLV CRM via Azure API Management",
   "main": "index.js",
   "scripts": {
-    "start": "node sample.js",
+    "start": "node ./node_modules/babel-cli/bin/babel-node.js sample.js",
     "start:graphql": "node index.js --exec babel-node --presets es2015",
     "debug": "nodemon server.js --exec babel-node --presets es2015 --inspect-brk",
     "test": "jest"
