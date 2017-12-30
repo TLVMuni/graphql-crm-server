@@ -1,9 +1,9 @@
-require('babel-core/register');
-require('babel-polyfill');
+//require('babel-core/register');
+//require('babel-polyfill');
 
 var http = require('http');
-//var express = require('express');
-import express from 'express';
+var express = require('express');
+//import express from 'express';
 var bodyParser = require('body-parser');
 var cors = require('cors');
 
