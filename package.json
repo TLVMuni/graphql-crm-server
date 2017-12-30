@@ -11,7 +11,7 @@
   },
   "author": "Oleg Kleiman",
   "engines": {
-    "node": ">=6.9.1"
+    "node": ">=8.1"
   },
   "license": "ISC",
   "dependencies": {
