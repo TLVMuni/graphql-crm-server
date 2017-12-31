@@ -18,7 +18,7 @@ This project consists of server and client side.
 The server side that actually implements GraphQL Server functioality does not require any building steps: it runs under Node as simple as <code>npm run start</code> or, under Azure, it runs automatically with iisnode since server.js is configured to be the default script in web.config.
 ### Client side
 Client side of this project is customized UI of famous GraphiQL. It adds authentication to GraphiQL for Digitel customers. It could be build with npm as following:
-- npm run client:build. This creates the bundle.js file in ui/assets directory.
+- <code>npm run client:build</code>. This creates the bundle.js file in ui/assets directory.
 HTML file <code>index.html</code> from <code>ui</code> directory refers to created bundle and served from main server express code as <code>/ui</code> endpoint.
 
 
