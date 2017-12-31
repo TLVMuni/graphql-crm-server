@@ -1,0 +1,165 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial;
+    font-size: 14px;
+    color: 14px;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+tt, code {
+  font-family: Consolas;
+  font-size: 12px;
+}
+
+ul, ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol ol, ul ol {
+  list-style-type: lower-roman;
+}
+
+.header {
+  height: 60px;
+  padding: 14px;
+  border: 1px solid #ddd;
+}
+
+.header h3 {
+  display: flex;
+  align-items: center;
+}
+
+.TableObject {
+  display: table;
+}
+
+.TableObject-item {
+  display: table-cell;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.Box-row {
+  padding: 16px;
+  margin-top: -1px;
+  list-style-type: none;
+  border: 1px solid #eee;
+}
+
+.Box-row-yellow {
+  background-color: #fff9ea;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #6cc644;
+  background-image: linear-gradient(#91dd70, #55ae2e);
+  border: 1px solid #5aad35;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: #55a532;
+  border-color: #519d30;
+  background-image: linear-gradient(#85d063, #4f992f);
+}
+
+.btn-sm {
+  padding: 3px 10px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.ml-2 {
+  margin-left: 8px !important;
+}
+
+.graphiql-ide * {
+  box-sizing: content-box;
+}
+
+.graphiql-ide {
+  height: 600px;
+  border-top: 1px solid #e0e0e0;
+}
+.graphiql-ide.signed-out {
+    position: relative
+}
+.graphiql-ide.signed-out:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    content: " ";
+    background: #ddd;
+    opacity: .5
+}
+
+.graphiql-container .variable-editor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  position: relative;
+}
