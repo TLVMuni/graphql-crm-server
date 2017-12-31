@@ -8,7 +8,7 @@
     "debug": "nodemon server.js --exec babel-node --presets es2015 --inspect-brk",
     "test": "jest"
   },
-  "author": "Oleg Kleiman",
+  "author": "TLV Municipality",
   "engines": {
     "node": "8.9.0"
   },
