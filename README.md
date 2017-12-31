@@ -15,7 +15,7 @@ This is reference implementation of GraphQL Server for TLV CRM exposed by its <a
 ## How to build
 This project consists of server and client side. 
 ### Server side
-The server side that actually implements GraphQL Server functioality does not require any building steps: it runs under Node as simple as <code>npm run start</start> or, under Azure, it runs automatically with iisnode since server.js is configured to be the default script in web.config.
+The server side that actually implements GraphQL Server functioality does not require any building steps: it runs under Node as simple as <code>npm run start</code> or, under Azure, it runs automatically with iisnode since server.js is configured to be the default script in web.config.
 ### Client side
 Client side of this project is customized UI of famous GraphiQL. It adds authentication to GraphiQL for Digitel customers. It could be build with npm as following:
 - npm run client:build
