@@ -2,7 +2,7 @@
   
 [![Build Status](https://travis-ci.org/TLVMuni/graphql-crm-server.svg?branch=master)](https://travis-ci.org/TLVMuni/graphql-crm-server) 
 
-This is a production repository. Be careful to update the master branch of this repository because it is published as deployment source for Azure App Service https://tlvgraphql.azurewebsites.net</b>
+<b>This is a production repository. Be careful to update the master branch of this repository because it is published as deployment source for Azure App Service https://tlvgraphql.azurewebsites.net</b>
 
 ## How to use
 Launch Graph<i>i</i>ql interface for this server via <a href='https://tlvgraphql.azurewebsites.net/graphiql'>/graphiql</a> endpoint. You shoud authenticate youself as TLV Digitel customer. Explore GraphQL CRM schema from 'Docs' tab on upper rigth. On the left side of Graph<i>i</i>ql you can compose various GraphQL queries. You can enrich these queries with variables prepared on down left bar. 
