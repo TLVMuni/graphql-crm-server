@@ -36,13 +36,17 @@ HTML file <code>index.html</code> from <code>ui</code> directory refers to creat
 This project uses GraphQL v0.12.3 that has <a herf='https://github.com/graphql/graphql-js/issues/1182'>an issue</a> for production build. This issue seems to be addressed in <a href='https://github.com/graphql/graphql-js/pull/1174'>PR#1174</a> but at time of release (Dec. 2017), it has not been merged in GraphQL version. 
 One way to get rid off this issue is to disable mangling for GraphQL build with webpack:
 ```javascript
+plugins: [
+      ...
       new UglifyJSPlugin({
         sourceMap: true,
         uglifyOptions: {
           mangle: false
         }
       }),
+]      
 ```
+Although this increases the size of the bundle for about __40Kb__, this will be eliminated once GraphQL merges the mentioned PR.
 
 ## Notes on hosting
 This site is tested to run under NodeJS ver. 8.9.0/1/3. When running on Azure hosting, the requirements for NodeJS version are expressed in Application Settings section of Azure Portal: <br>
