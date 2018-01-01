@@ -46,7 +46,7 @@ plugins: [
       }),
 ]      
 ```
-Although this increases the size of the bundle for about __40Kb__, this will be eliminated once GraphQL merges the mentioned PR.
+Although this increases the size of the bundle for about __40Kb__, this will be eliminated once GraphQL merges :pray: the mentioned PR.
 
 ## Notes on hosting
 This site is tested to run under NodeJS ver. 8.9.0/1/3. When running on Azure hosting, the requirements for NodeJS version are expressed in Application Settings section of Azure Portal: <br>
