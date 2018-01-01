@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js --exec babel-node --presets es2015",
     "debug": "nodemon server.js --exec babel-node --presets es2015 --inspect-brk",
+    "client:build:prod": "webpack --optimize-minimize --config webpack.prod.js",
     "client:build": "webpack -d",
     "client:start": "webpack-dev-server -d --colors --watch",
     "test": "jest"
@@ -48,6 +49,7 @@
   },
   "devDependencies": {
     "extract-text-webpack-plugin": "^3.0.2",
+    "uglifyjs-webpack-plugin": "^1.1.5",
     "webpack-dev-server": "^2.9.7"
   }
 }

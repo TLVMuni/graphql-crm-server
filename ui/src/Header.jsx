@@ -65,7 +65,7 @@ class Header extends React.Component<Props, State> {
               <div className='Box-row Box-row-yellow'>
                 <strong>Heads up!</strong>&nbsp;
                 TLV GraphQL Explorer makes use of
-                <strong>real, live, production data</strong>
+                <strong> real, live, production data</strong>
               </div>
             </div>
       );
