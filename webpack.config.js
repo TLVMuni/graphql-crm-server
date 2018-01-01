@@ -14,7 +14,7 @@ var config = {
   ],
   output: {
       path: BUILD_DIR,
-      filename: 'bundle.js'
+      filename: jsName
   },
   resolve: {
       extensions: ['.js', '.jsx', '.css']
@@ -52,6 +52,7 @@ var config = {
   devServer: {
       headers: { 'Access-Control-Origin': '*'}
   },
+  devtool: 'source-map',
   plugins: [
     new ExtractTextPlugin({
       filename: 'styles.css',

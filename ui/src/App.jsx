@@ -8,7 +8,7 @@ class App extends React.Component<Props, State> {
 
   render() {
     return (<span>
-              <Header text='Start exploring GraphQL API queries using your Digitel account now' />
+              <Header text='Start exploring GraphQL API queries using your Digitel account now ' />
               <Explorer />
             </span>
            );
