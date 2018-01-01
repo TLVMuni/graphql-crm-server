@@ -8,8 +8,8 @@ import reducers from './reducers';
 
 import App from './App.jsx';
 
-//let store = createStore(reducers);
+let store = createStore(reducers);
 
-//ReactDOM.render(<Provider store={store}>
-//                  <App />
-//                </Provider>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}>
+                  <App />
+                </Provider>, document.getElementById('root'));

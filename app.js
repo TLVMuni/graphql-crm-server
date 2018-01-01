@@ -3,11 +3,16 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import graphqlHTTP from 'express-graphql';
 import { graphiqlExpress } from 'graphql-server';
+import path from 'path';
 import cors from 'cors';
 
 import { schema } from './schemas/schema';
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'ui')));
+app.use(express.static(path.join(__dirname, 'ui', 'assets')));
+
 app.use('*', cors({ origin: '*' }));
 
 // 'context' is optional parameter passed to graphqlHTTP middleware.

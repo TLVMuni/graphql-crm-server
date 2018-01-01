@@ -94,7 +94,7 @@ class Explorer extends React.Component<Props> {
             <GraphiQL schema={null}
                       ref={c => { this.graphiql = c; }} {...this.state}
                       fetcher={this.graphQLFetcher}
-                      editorTheme="solarized light">
+                      editorTheme="material">
                <GraphiQL.Logo>TLV Graph<em>i</em>QL</GraphiQL.Logo>
               <GraphiQL.Toolbar>
                   <GraphiQL.Button
