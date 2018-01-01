@@ -30,7 +30,7 @@ For production environment, build the source as following:
 
 Production build is based on <code>process.env.NODE_ENV</code> variable that actually is set up within webpack build-in DefinePlugin in production configuration config (webpack.prod.js).
 
-HTML file <code>index.html</code> from <code>ui</code> directory refers to created bundle and served from main server express code as <code>/ui</code> endpoint.
+HTML file <code>index.html</code> from <code>ui</code> directory refers to created bundle. Both files client files - <code>index.html</code> and <code>bundle.js</code> - are served from main server Express code as statis folders.
 
 ## Notes on hosting
 This site is tested to run under NodeJS ver. 8.9.0/1/3. When running on Azure hosting, the requirements for NodeJS version are expressed in Application Settings section of Azure Portal: <br>
