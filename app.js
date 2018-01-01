@@ -10,14 +10,10 @@ import { schema } from './schemas/schema';
 
 const app = express();
 
-app.use(express.static('ui'));
-app.use(express.static('ui/assets'));
+app.use(express.static(path.join(__dirname, 'ui')));
+app.use(express.static(path.join(__dirname, 'ui', 'assets')));
 
-//app.use('*', cors({ origin: '*' }));
-
-// app.get('/ui', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-// });
+app.use('*', cors({ origin: '*' }));
 
 // 'context' is optional parameter passed to graphqlHTTP middleware.
 // According to express-graphql GitHub repository documentation (https://github.com/graphql/express-graphql#options)
