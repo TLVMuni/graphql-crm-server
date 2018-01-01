@@ -13,7 +13,7 @@ Launch Graph<i>i</i>ql interface for this server via <a href='https://tlvgraphql
 This is reference implementation of GraphQL Server for TLV CRM exposed by its <a href='https://apiportal.tel-aviv.gov.il/docs/services/597f1d1e9f9e5306143951da/operations/597f1d409f9e5306143951db' target='_blank'>API</a>. It is implemented with Apollo NodeJS packages. Invoking GraphQL server requires the authentication that could be performed against the <a href='https://apiportal.tel-aviv.gov.il/docs/services/59774fe39f9e531550416402/operations/597efe8e9f9e5306143951d1' target='_blank'>TLV authentication endpoint</a> (better be called <code>/me</code>) or interactively from <a href='https://tlvauth.azurewebsites.net/logintoken.html' target='_blank'>this page<a>. Currently, the authentication is based on the records of registered Digitel customers. The obtained authentication token (JWT) should be passed to GraphQL server with Authorization header, however, GraphQL Server does not validate the passed token. It just forwards the token down to the wrapped API. Since CRM API is actually managed by Azure API Management, the token is validated there in the policy associated with API.
   
 ## How to build
-This project consists of server and client side. 
+This project consists of a server and a client parts.
 ### Server side
 The server side that actually implements GraphQL Server functioality does not require any building steps: it runs under Node as simple as <code>npm run start</code> or, under Azure, it runs automatically with iisnode since server.js is configured to be the default script in web.config.
 ### Client side
