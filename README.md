@@ -33,7 +33,7 @@ Production build is based on <code>process.env.NODE_ENV</code> variable that act
 HTML file <code>index.html</code> from <code>ui</code> directory refers to created bundle. Both files client files - <code>index.html</code> and <code>bundle.js</code> - are served from main server Express code as statis folders.
 
 ### Notes on production build
-This project uses GraphQL v0.12.3 that has <a herf='https://github.com/graphql/graphql-js/issues/1182'>an issue</a> :scream: for production build. This issue seems to be addressed in <a href='https://github.com/graphql/graphql-js/pull/1174'>PR#1174</a> but at time of release (Dec. 2017), it has not been merged in GraphQL version. 
+This project uses GraphQL v0.12.3 that has <a href='https://github.com/graphql/graphql-js/issues/1182'>an issue</a> :scream: for production build. This issue seems to be addressed in <a href='https://github.com/graphql/graphql-js/pull/1174'>PR#1174</a> but at time of release (Dec. 2017), it has not been merged in GraphQL version. 
 One way to get rid off this issue is to disable mangling for GraphQL build with webpack:
 ```javascript
 plugins: [
