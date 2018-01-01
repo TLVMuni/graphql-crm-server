@@ -5,7 +5,7 @@
 <b>This is a production repository. Be careful to update the master branch of this repository because it is published as deployment source for Azure App Service https://tlvgraphql.azurewebsites.net</b>
 
 ## How to use
-Launch Graph<i>i</i>ql interface for this server via <a href='https://tlvgraphql.azurewebsites.net/graphiql'>/graphiql</a> endpoint. You shoud authenticate youself as TLV Digitel customer. Explore GraphQL CRM schema from 'Docs' tab on upper rigth. On the left side of Graph<i>i</i>ql you can compose various GraphQL queries. You can enrich these queries with variables prepared on down left bar. 
+Launch customized Graph<i>i</i>ql interface for this server via <a href='https://tlvgraphql.azurewebsites.net/index.html' target='_blank'>this</a> endpoint. You shoud authenticate youself as TLV Digitel customer. Explore GraphQL CRM schema from 'Docs' tab on upper rigth. On the left side of Graph<i>i</i>ql you can compose various GraphQL queries. You can enrich these queries with variables prepared on down left bar. 
 <br>When ready, copy the query (possible with the variables) to your client and use the GraphQL tool appropriate for your language. We have a <a href='https://github.com/TLVMuni/graphiql-crm' target='_blank'>sample</a> of such client written in React.
 <br> The actual endpoint of this service for GraphQL POSTs is <code>/graphql</code> (without <i>i</i>). Other HTTP verbs (GET, OPTIONS, PUT etc. are not served by GraphQL. Use (authenticated) mutations for updates, queries for reads. 
 
