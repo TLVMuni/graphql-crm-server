@@ -22,11 +22,13 @@ For development  environment, build it as following:
 - <code>npm run client:build</code>
 - <code>yarn run client:build</code>
 
-In both cases, this buils should create the bundle.js file in ui/assets directory.
+In either case, this buils should create the bundle.js file in ui/assets directory.
 
 For production environment, build the source as following:
 - <code>npm run client:build:prod</code>
 - <code>yarn run client:build:prod</code>
+
+Production build is based on <code>process.env.NODE_ENV</code> variable that actually is set up within webpack build-in DefinePlugin in production configuration config (webpack.prod.js).
 
 HTML file <code>index.html</code> from <code>ui</code> directory refers to created bundle and served from main server express code as <code>/ui</code> endpoint.
 
