@@ -6,13 +6,22 @@ import LoginButton from './LoginButton';
 
 type Props = {
   text: string,
+  loginButton: {},
+  loginStatusChanged: (status: boolean) => void,
+  dispatch: ({}) => void
 };
 
 type State = {
-  loggedIn: Boolean
+  loggedIn: boolean,
+  loginStatus: string
 }
 
 class Header extends React.Component<Props, State> {
+
+  loginButton: ?{
+    getAuthorizationHeader: () => string
+  }
+  loginStatusChanged: (status: boolean) => void
 
   constructor(props) {
 
@@ -23,29 +32,31 @@ class Header extends React.Component<Props, State> {
       loginStatus: "Log In"
     }
 
-    this.loginButton = {};
+    //this.loginButton = {};
 
     this.loginStatusChanged = this.loginStatusChanged.bind(this);
   }
 
-  loginStatusChanged(status) {
+  loginStatusChanged(status: boolean) {
 
-    const closure = this.loginButton.getAuthorizationHeader;
-    const logText = status ? 'Log Out' : 'Log In';
+    if( this.loginButton ) {
 
-    this.setState({
-      loggedIn: status,
-      loginStatus: logText
-    });
+        const closure = this.loginButton.getAuthorizationHeader;
+        const logText = status ? 'Log Out' : 'Log In';
 
-    this.props.dispatch({
-      type: 'LOGGED_IN',
-      data: {
-          status: status,
-          getAuthHeaderClosure: closure
-        }
-    });
+        this.setState({
+          loggedIn: status,
+          loginStatus: logText
+        });
 
+        this.props.dispatch({
+          type: 'LOGGED_IN',
+          data: {
+              status: status,
+              getAuthHeaderClosure: closure
+            }
+        });
+    }
   }
 
   render() {
