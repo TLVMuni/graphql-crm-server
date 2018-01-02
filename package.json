@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js --exec babel-node --presets es2015",
     "debug": "nodemon server.js --exec babel-node --presets es2015 --inspect-brk",
-    "client:build:prod": "webpack --config webpack.prod.js",
+    "client:build:prod": "webpack  --config webpack.prod.js",
     "client:build": "webpack -d",
     "client:start": "webpack-dev-server -d --colors --watch",
     "test": "jest"
