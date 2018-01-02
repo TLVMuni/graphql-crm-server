@@ -3,7 +3,6 @@ node_js:
   - '8.9.1'
 os:
   - osx
-  - windows
 script:
   - npm run test
 sudo: false
