@@ -1,12 +1,12 @@
 import _ from 'lodash';
 
 const INITIAL_STATE = {
-  loggedIn: false
-  //authHeader: {},
-  //authHeaderClosure: {}
+  loggedIn: false,
+  authHeaderClosure: {}
 };
 
 const reducers = (state = INITIAL_STATE, action) => {
+//function reducers(state = INITIAL_STATE, action)  {
 
   switch( action.type ) {
 
