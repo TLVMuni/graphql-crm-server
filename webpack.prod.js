@@ -32,9 +32,13 @@ var config = {
     new webpack.DefinePlugin({
        'process.env.NODE_ENV': JSON.stringify('production')
      }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
     new UglifyJSPlugin({
         sourceMap: true, // this will enable debug in production
         uglifyOptions: {
+          output: {
+            comments: false
+          },
           mangle: false
         }
       }),
