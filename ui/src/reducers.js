@@ -2,7 +2,7 @@ import _ from 'lodash';
 
 const INITIAL_STATE = {
   loggedIn: false,
-  authHeaderClosure: {}
+  authHeaderClosure: () => {}
 };
 
 const reducers = (state = INITIAL_STATE, action) => {
