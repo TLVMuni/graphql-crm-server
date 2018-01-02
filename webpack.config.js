@@ -24,6 +24,7 @@ var config = {
         loader: 'babel-loader',
         exclude: /node_modules/
       },
+      { test: /\.flow$/, loader: 'ignore-loader' },
       // {
       //   test: /\.css$/,
       //    loader: ExtractTextPlugin.extract({

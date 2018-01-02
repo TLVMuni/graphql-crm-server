@@ -5,11 +5,27 @@ import GraphiQL from 'graphiql';
 import classnames from 'classnames';
 
 type Props = {
-  enabled: Boolean,
+  enabled: boolean,
   fetcher:() => void,
-}
+  authHeaderClosure: () => string,
+};
 
-class Explorer extends React.Component<Props> {
+type State = {
+  fetcher: () => void,
+  query: string,
+  variables: string,
+  response: string,
+};
+
+class Explorer extends React.Component<Props, State> {
+
+  graphQLFetcher: () => void
+  graphiql: ?{
+    getQueryEditor: () => {
+      getValue: () => string,
+      setValue: (val: string) => void
+    }
+  }
 
   constructor(props) {
 
@@ -56,11 +72,13 @@ class Explorer extends React.Component<Props> {
   }
 
   handleClickPrettifyButton(event) {
-    const editor = this.graphiql.getQueryEditor();
-    const currentText = editor.getValue();
-    const { parse, print } = require('graphql');
-    const prettyText = print(parse(currentText));
-    editor.setValue(prettyText);
+    if( this.graphiql ) {
+      const editor = this.graphiql.getQueryEditor();
+      const currentText = editor.getValue();
+      const { parse, print } = require('graphql');
+      const prettyText = print(parse(currentText));
+      editor.setValue(prettyText);
+    }
   }
 
   graphQLFetcher(graphQLParams) {
@@ -113,7 +131,6 @@ class Explorer extends React.Component<Props> {
 function mapStateToProps(state) {
   return {
     enabled: state.loggedIn,
-    //authHeader: state.authHeader,
     authHeaderClosure: state.authHeaderClosure
   };
 };

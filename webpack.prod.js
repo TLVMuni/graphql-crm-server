@@ -24,7 +24,8 @@ var config = {
         test: /\.jsx$/,
         loader: 'babel-loader',
         exclude: /node_modules/
-      }
+      },
+      { test: /\.flow$/, loader: 'ignore-loader' },
     ]
   },
   devtool: 'source-map',

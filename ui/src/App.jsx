@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Explorer from './Explorer';
 
-class App extends React.Component<Props, State> {
+class App extends React.Component<{}>{
 
   render() {
     return (<span>
