@@ -18,7 +18,7 @@ This project consists of a server and a client parts.
 The server side that actually implements GraphQL Server functioality does not require any building steps: it runs under Node as simple as <code>npm run start</code> or, under Azure, it runs automatically with iisnode since server.js is configured to be the default script in web.config.
 ### Client side
 Client side of this project is customized UI of famous GraphiQL. It adds authentication to GraphiQL for Digitel customers. 
-For development  environment, build it as following:
+For development environment, build it as following:
 - <code>npm run client:build</code>
 - <code>yarn run client:build</code>
 
@@ -27,6 +27,8 @@ In either case, this buils should create the bundle.js file in ui/assets directo
 For production environment, build the source as following:
 - <code>npm run client:build:prod</code>
 - <code>yarn run client:build:prod</code>
+
+Under Azure, run these scripts from Kudu console.
 
 Production build is based on <code>process.env.NODE_ENV</code> variable that actually is set up within webpack build-in DefinePlugin in production configuration config (webpack.prod.js).
 
