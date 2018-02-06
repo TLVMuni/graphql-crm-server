@@ -40,6 +40,7 @@ class LoginButton extends React.Component{
               loading: false
             });
             self.props.onStatusChange(true);
+            event.source.close();
         }
       }, false);
   }
